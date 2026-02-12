@@ -22,7 +22,8 @@ tooltip {
 #custom-notification,
 #tray,
 #backlight,
-#custom-launcher {
+#custom-launcher,
+#power-profiles-daemon {
   background-color: @color0;
   padding-left: 12px;
   padding-right: 18px;
@@ -36,6 +37,21 @@ tooltip {
 
 #backlight {
   border-bottom: 3px solid @color11
+}
+
+#power-profiles-daemon.balanced {
+  border-bottom: lightblue solid 3px;
+  transition: 0.2s
+}
+
+#power-profiles-daemon.performance {
+  border-bottom: red solid 3px;
+  transition: 0.2s
+}
+
+#power-profiles-daemon.power-saver {
+  border-bottom: green solid 3px;
+  transition: 0.2s
 }
 
 #tray menu {
