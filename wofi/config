@@ -1,0 +1,13 @@
+show=drun
+prompt=  Apps
+width=600
+height=400
+location=center
+allow_images=false
+image_size=32
+insensitive=true
+term=foot
+gtk_dark=true
+hide_scroll=true
+no_actions=true
+

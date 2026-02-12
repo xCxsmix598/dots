@@ -1,0 +1,65 @@
+/* Import pywal colors */
+@import url("$HOME/.config/hypr/colors/colors-waybar.css");
+
+/* Fallback if colors-waybar.css doesn't exist */
+@define-color background @background;
+@define-color foreground @foreground;
+@define-color color1 @color1;
+@define-color color2 @color2;
+@define-color color3 @color3;
+
+/* Window */
+window {
+    margin: 0px;
+    border-radius: 14px;
+    background-color: alpha(@background, 0.3);
+    border: 2px solid @color2;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+}
+
+/* Outer box */
+#outer-box {
+    margin: 20px;
+}
+
+/* Search input */
+#input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: alpha(@color1, 0.3);
+    color: @foreground;
+    border: 2px solid transparent;
+}
+
+#input:focus {
+    border: 2px solid @color2;
+}
+
+/* Scroll area */
+#scroll {
+    margin: 0px;
+}
+
+/* Entry */
+#entry {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#entry:selected {
+    background-color: alpha(@color2, 0.5);
+    color: @foreground;
+}
+
+/* Text */
+#text {
+    margin-left: 8px;
+}
+
+/* Image (icon) */
+#img {
+    margin-right: 10px;
+}
+

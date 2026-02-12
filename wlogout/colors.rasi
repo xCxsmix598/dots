@@ -1,0 +1,10 @@
+@foreground: null;
+@background: null;
+@color0: #33211c;
+@color1: #B17269;
+@color2: #C67772;
+@color3: #BF8479;
+@color4: #AC7D81;
+@color5: #C99F9A;
+@color6: #D9A29E;
+@color7: #ccc7c6;

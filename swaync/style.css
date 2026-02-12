@@ -1,0 +1,81 @@
+/* Import pywal colors */
+@import url('/home/xyphe/.config/hypr/colors/colors-waybar.css');
+/* Fallback font */
+* {
+  font-family: JetBrainsMono Nerd Font, sans-serif;
+  font-size: 14px;
+}
+
+/* Notification window */
+.notification {
+  background: @background;
+  color: @foreground;
+  border-radius: 14px;
+  border: 2px solid @color2;
+  padding: 10px;
+  margin: 6px;
+}
+
+/* App name */
+.app-name {
+  color: @color4;
+  font-weight: bold;
+}
+
+/* Summary */
+.summary {
+  color: @foreground;
+  font-size: 15px;
+}
+
+/* Body */
+.body {
+  color: @color7;
+}
+
+/* Notification icons */
+.notification-icon {
+  border-radius: 8px;
+}
+
+/* Urgency levels */
+.notification.low {
+  border-color: @color3;
+}
+
+.notification.normal {
+  border-color: @color4;
+}
+
+.notification.critical {
+  border-color: @color1;
+  background: alpha(@color1, 0.15);
+}
+
+/* Control center */
+.control-center {
+  background: @background;
+  border-radius: 18px;
+  border: 2px solid @color6;
+  padding: 12px;
+}
+
+/* Buttons */
+button {
+  background: @color2;
+  color: @background;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: @color4;
+}
+
+/* DND switch */
+.switch {
+  background: @color0;
+}
+
+.switch:checked {
+  background: @color2;
+}

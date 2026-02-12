@@ -1,0 +1,21 @@
+set $wallpaper /home/xyphe/.wallpapers/artix-nord.png
+
+set $background #1b1e25
+set $foreground #c6c6c8
+
+set $color0 #1b1e25
+set $color1 #738C90
+set $color2 #7DA2A4
+set $color3 #96A5A8
+set $color4 #8FBBBA
+set $color5 #95C0BF
+set $color6 #A8BFC0
+set $color7 #c6c6c8
+set $color8 #626878
+set $color9 #738C90
+set $color10 #7DA2A4
+set $color11 #96A5A8
+set $color12 #8FBBBA
+set $color13 #95C0BF
+set $color14 #A8BFC0
+set $color15 #c6c6c8

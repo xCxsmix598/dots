@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# ~/.config/wlogout/colors.rasi
+# Generate wlogout colors from pywal
+colors="$HOME/.config/hypr/colors/colors.json"
+
+foreground=$(jq -r .colors.foreground < "$colors")
+background=$(jq -r .colors.background < "$colors")
+color0=$(jq -r .colors.color0 < "$colors")
+color1=$(jq -r .colors.color1 < "$colors")
+color2=$(jq -r .colors.color2 < "$colors")
+color3=$(jq -r .colors.color3 < "$colors")
+color4=$(jq -r .colors.color4 < "$colors")
+color5=$(jq -r .colors.color5 < "$colors")
+color6=$(jq -r .colors.color6 < "$colors")
+color7=$(jq -r .colors.color7 < "$colors")
+
+cat << EOF > ~/.config/wlogout/colors.rasi
+@foreground: $foreground;
+@background: $background;
+@color0: $color0;
+@color1: $color1;
+@color2: $color2;
+@color3: $color3;
+@color4: $color4;
+@color5: $color5;
+@color6: $color6;
+@color7: $color7;
+EOF

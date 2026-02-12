@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/xyphe/.wallpapers/artix-nord.png"
+let background = "#1b1e25"
+let foreground = "#c6c6c8"
+let cursor     = "#c6c6c8"
+
+" Colors
+let color0  = "#1b1e25"
+let color1  = "#738C90"
+let color2  = "#7DA2A4"
+let color3  = "#96A5A8"
+let color4  = "#8FBBBA"
+let color5  = "#95C0BF"
+let color6  = "#A8BFC0"
+let color7  = "#c6c6c8"
+let color8  = "#626878"
+let color9  = "#738C90"
+let color10 = "#7DA2A4"
+let color11 = "#96A5A8"
+let color12 = "#8FBBBA"
+let color13 = "#95C0BF"
+let color14 = "#A8BFC0"
+let color15 = "#c6c6c8"
