@@ -3,22 +3,31 @@
   "width": 1900,
   "layer": "bottom",
   "position": "top",
-  "modules-center": [],
-  "spacing": 18,
-  "modules-right": [
-    "tray",
+  "modules-center": [
+    "custom/launcher",
+    "clock",
     "backlight",
     "pulseaudio",
+    "hyprland/workspaces",
     "power-profiles-daemon",
     "bluetooth",
     "network",
     "custom/notification"
   ],
-  "modules-left": [
-    "custom/launcher",
-    "clock",
-    "hyprland/workspaces"
-  ],
+  "spacing": 18,
+  //"modules-right": [
+  //  "tray",
+  //  "backlight",
+  //  "pulseaudio",
+  //  "power-profiles-daemon",
+  //  "bluetooth",
+  //  "network",
+  //  "custom/notification"
+  //],
+  //"modules-left": [
+  //  "custom/launcher",
+  //  "clock"
+  //],
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
@@ -152,6 +161,19 @@
       "performance": "",
       "balanced": "",
       "power-saver": ""
+    }
+  },
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      // Named workspaces
+      // (you need to configure them in niri)
+      "browser": "",
+      "discord": "",
+      "chat": "<b></b>",
+      // Icons by state
+      "active": "",
+      "default": ""
     }
   }
 }

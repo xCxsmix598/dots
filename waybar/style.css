@@ -40,7 +40,7 @@ tooltip {
 }
 
 #power-profiles-daemon.balanced {
-  border-bottom: lightblue solid 3px;
+  border-bottom: deepskyblue solid 3px;
   transition: 0.2s
 }
 
@@ -50,7 +50,7 @@ tooltip {
 }
 
 #power-profiles-daemon.power-saver {
-  border-bottom: green solid 3px;
+  border-bottom: lawngreen solid 3px;
   transition: 0.2s
 }
 
@@ -89,7 +89,6 @@ tooltip {
   border-radius: 32px;
   border-bottom: 3px solid @color13;
   padding: 3px 10px 8px 10px;
-  min-width: 390px;
 }
 
 #workspaces button {
