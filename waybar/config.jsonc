@@ -14,6 +14,9 @@
     "network",
     "custom/notification"
   ],
+  "modules-right": [
+    "tray"
+  ],
   "spacing": 18,
   //"modules-right": [
   //  "tray",
@@ -39,21 +42,12 @@
   "hyprland/workspaces": {
     "format": "",
     "show-special": "true",
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "󰊗",
-      "5": "",
-      "active": "",
-      "default": ""
-    },
     "persistent-workspaces": {
-      "*": 6 // 5 workspaces by default on every monitor
+      "*": 5 // 5 workspaces by default on every monitor
     }
   },
   "clock": {
-    "format": "  {:%I:%M %p}",
+    "format": "󰥔  {:%I:%M %p}",
     "format-alt": "{:%A, %B %d, %Y (%R)}  ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -153,7 +147,7 @@
     "on-click": "wofi --show drun"
   },
   "power-profiles-daemon": {
-    "format": "{icon}   {profile}",
+    "format": "{icon}  {profile}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
     "format-icons": {

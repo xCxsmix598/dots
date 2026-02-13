@@ -33,10 +33,17 @@ tooltip {
 #custom-launcher {
   border-bottom: @color15 solid 3px;
   font-size: 24;
+  min-width: 30px;
+  border-radius: 128px
 }
 
 #backlight {
-  border-bottom: 3px solid @color11
+  border-bottom: 3px solid @color11;
+  min-width: 50px
+}
+
+#power-profiles-daemon {
+  min-width: 128px
 }
 
 #power-profiles-daemon.balanced {
@@ -59,16 +66,25 @@ tooltip {
 }
 
 #tray {
+  opacity: 0;
   border-bottom: 3px @color12 solid;
   padding-right: 12px;
   padding-left: 12px;
   min-width: 32px;
+  transition: 1s
+}
+
+#tray:hover,
+#tray *:hover,
+#tray>menu>menuitem {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 #custom-notification {
   padding: 0px 3px 0px 0px;
   border-bottom: 3px @color7 solid;
-  min-width: 50px;
+  min-width: 60px;
 }
 
 #network {
@@ -76,7 +92,8 @@ tooltip {
 }
 
 #pulseaudio {
-  border-bottom: 3px solid @color10
+  border-bottom: 3px solid @color10;
+  min-width: 50px
 }
 
 #bluetooth {
@@ -84,37 +101,39 @@ tooltip {
 }
 
 #workspaces {
-  background-color: @color0;
+  background-color: transparent;
   margin: 0;
   border-radius: 32px;
-  border-bottom: 3px solid @color13;
-  padding: 3px 10px 8px 10px;
+  padding: 8px 0px 8px 0px;
 }
 
 #workspaces button {
-  background-color: transparent;
+  background-color: @color0;
   color: transparent;
   margin: 8px 5px 5px 5px;
-  border-radius: 50px;
-  padding: 0px 15px 0 15px;
+  border-radius: 12px;
+  padding: 5px 15px 5px 15px;
   font-size: 0px;
   min-height: 2px;
-  border: 3px solid @color15;
-  transition: 0.2s;
+  border: solid 3px @color6;
+  transition: 0.3s;
+  min-height: 12px
 }
 
 #workspaces button.active {
-  padding: 0px 23px 0px 23px;
+  padding: 0px 15px 0px 15px;
+  border-radius: 32px;
   margin: 8px 5px 5px 5px;
-  background-color: @color5;
-  border: 3px solid @color7;
+  background-color: @color6;
+  transition: 0.3s;
+  border: solid 3px @color0
 }
 
 #workspaces button:hover {
-  background-color: @color5;
+  background-color: @color6;
   color: @color5;
-  border-style: solid;
-  border-color: @color7;
+  border-color: @color0;
+  border-radius: 32px
 }
 
 #workspaces button.urgent {
@@ -128,4 +147,5 @@ tooltip {
   padding-right: 12px;
   padding-left: 12px;
   border-bottom: 3px solid @color14;
+  min-width: 100px
 }
