@@ -1,5 +1,7 @@
 alias fastfetch="fastfetch -c /usr/share/fastfetch/presets/examples/27.jsonc"
+alias ff="fastfetch"
 fastfetch
+setopt correct_all
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
