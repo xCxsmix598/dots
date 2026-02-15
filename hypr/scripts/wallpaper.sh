@@ -39,6 +39,8 @@ fi
 
 WALLPAPER="${WALLPAPERS[$INDEX]}"
 
+cp $WALLPAPER ~/.config/hypr/hyprlock.png
+
 # ---- Apply pywal ----
 /home/xyphe/.config/hypr/.venv/bin/python -m pywal -i "$WALLPAPER" --out-dir /home/xyphe/.config/hypr/colors -n &
 
@@ -56,3 +58,5 @@ killall -9 waybar
 waybar &
 killall -9 swaync
 swaync &
+
+export $WALL="$WALLPAPER"
