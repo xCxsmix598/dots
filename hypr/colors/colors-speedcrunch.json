@@ -1,15 +1,15 @@
 {
     "cursor": "#c6c6c8",
     "number": "#c6c6c8",
-    "parens": "#6C8BAD",
-    "result": "#5E81AB",
+    "parens": "#66899C",
+    "result": "#607FA6",
     "comment": "#626878",
-    "matched": "#5E81AB",
-    "function": "#D08971",
-    "operator": "#967789",
-    "variable": "#5B769A",
-    "scrollbar": "#967789",
-    "separator": "#967789",
+    "matched": "#607FA6",
+    "function": "#50637B",
+    "operator": "#5D7FA9",
+    "variable": "#576F8C",
+    "scrollbar": "#5D7FA9",
+    "separator": "#5D7FA9",
     "background": "#1b1e25",
     "editorbackground": "#1b1e25"
 }

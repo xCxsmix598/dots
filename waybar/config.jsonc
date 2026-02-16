@@ -3,59 +3,41 @@
   "width": 1900,
   "layer": "bottom",
   "position": "top",
-  "modules-center": [
-    "custom/launcher",
-    "clock",
-    "backlight",
-    "pulseaudio",
-    "hyprland/workspaces",
-    "power-profiles-daemon",
-    "bluetooth",
-    "network",
-    "custom/notification"
-  ],
-  "modules-right": [
-    "tray"
-  ],
-  "spacing": 18,
-  //"modules-right": [
-  //  "tray",
+  //"modules-center": [
+  //  "custom/launcher",
+  //  "clock",
   //  "backlight",
   //  "pulseaudio",
+  //  "hyprland/workspaces",
   //  "power-profiles-daemon",
   //  "bluetooth",
   //  "network",
   //  "custom/notification"
   //],
-  //"modules-left": [
-  //  "custom/launcher",
-  //  "clock"
+  //"modules-right": [
+  //  "tray"
   //],
-  "mpd": {
-    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
-    "format-disconnected": "Disconnected ",
-    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-    "interval": 2,
-    "consume-icons": {
-      "on": " " // Icon shows only when "consume" is on
-    },
-    "random-icons": {
-      "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
-      "on": " "
-    },
-    "repeat-icons": {
-      "on": " "
-    },
-    "single-icons": {
-      "on": "1 "
-    },
-    "state-icons": {
-      "paused": "",
-      "playing": ""
-    },
-    "tooltip-format": "MPD (connected)",
-    "tooltip-format-disconnected": "MPD (disconnected)"
-  },
+  //"modules-left": [
+  //  "mpris"
+  //],
+  "spacing": 18,
+  "modules-right": [
+    "tray",
+    "backlight",
+    "pulseaudio",
+    "power-profiles-daemon",
+    "bluetooth",
+    "network",
+    "custom/notification"
+  ],
+  "modules-left": [
+    "custom/launcher",
+    "mpris",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "clock"
+  ],
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon} {percent}%",
@@ -72,7 +54,7 @@
     }
   },
   "clock": {
-    "format": "󰥔  {:%I:%M %p}",
+    "format": "{:%I:%M %p}",
     "format-alt": "{:%A, %B %d, %Y (%R)}  ",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
@@ -99,7 +81,7 @@
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
-    "format-bluetooth": "{volume}% {icon}",
+    "format-bluetooth": "󰂰 {volume}%",
     "format-muted": "",
     "format-icons": {
       "alsa_output.pci-0000_00_1f.3.analog-stereo": "󰕾",
@@ -168,11 +150,11 @@
   },
   "custom/launcher": {
     "tooltip": false,
-    "format": " 󰣇 ",
+    "format": "󰣇",
     "on-click": "wofi --show drun"
   },
   "power-profiles-daemon": {
-    "format": "{icon}  {profile}",
+    "format": "{icon}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
     "format-icons": {
@@ -194,5 +176,17 @@
       "active": "",
       "default": ""
     }
+  },
+  "mpris": {
+    "format": "{player_icon} {title} - {artist}",
+    "format-paused": "{status_icon} <i>{title} - {artist}</i>",
+    "player-icons": {
+      "default": "",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": ""
+    }
+    // "ignored-players": ["firefox"]
   }
 }

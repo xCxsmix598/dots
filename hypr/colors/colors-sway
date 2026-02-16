@@ -1,21 +1,21 @@
-set $wallpaper /home/xyphe/.wallpapers/ign_farFromTomorrow.jpg
+set $wallpaper /home/xyphe/.wallpapers/ign_lonely-man.png
 
 set $background #1b1e25
 set $foreground #c6c6c8
 
 set $color0 #1b1e25
-set $color1 #D08971
-set $color2 #5B769A
-set $color3 #967789
-set $color4 #5E81AB
-set $color5 #6C8BAD
-set $color6 #7CA2C2
+set $color1 #50637B
+set $color2 #576F8C
+set $color3 #5D7FA9
+set $color4 #607FA6
+set $color5 #66899C
+set $color6 #5F81A9
 set $color7 #c6c6c8
 set $color8 #626878
-set $color9 #D08971
-set $color10 #5B769A
-set $color11 #967789
-set $color12 #5E81AB
-set $color13 #6C8BAD
-set $color14 #7CA2C2
+set $color9 #50637B
+set $color10 #576F8C
+set $color11 #5D7FA9
+set $color12 #607FA6
+set $color13 #66899C
+set $color14 #5F81A9
 set $color15 #c6c6c8

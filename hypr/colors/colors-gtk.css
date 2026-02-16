@@ -3,7 +3,7 @@
 @define-color theme_base_color #1b1e25;
 @define-color theme_text_color #c6c6c8;
 
-@define-color theme_selected_bg_color #5B769A;
+@define-color theme_selected_bg_color #576F8C;
 @define-color theme_selected_fg_color #c6c6c8;
 
 @define-color tooltip_bg_color #1b1e25;
@@ -11,9 +11,9 @@
 
 @define-color placeholder_text_color #626878;
 
-@define-color link_color #5E81AB;
-@define-color link_visited_color #6C8BAD;
+@define-color link_color #607FA6;
+@define-color link_visited_color #66899C;
 
-@define-color warning_color #967789;
-@define-color error_color #D08971;
-@define-color success_color #5B769A;
+@define-color warning_color #5D7FA9;
+@define-color error_color #50637B;
+@define-color success_color #576F8C;

@@ -11,40 +11,40 @@ Color=27,30,37
 Color=98,104,120
 
 [Color1]
-Color=208,137,113
+Color=80,99,123
 
 [Color1Intense]
-Color=208,137,113
+Color=80,99,123
 
 [Color2]
-Color=91,118,154
+Color=87,111,140
 
 [Color2Intense]
-Color=91,118,154
+Color=87,111,140
 
 [Color3]
-Color=150,119,137
+Color=93,127,169
 
 [Color3Intense]
-Color=150,119,137
+Color=93,127,169
 
 [Color4]
-Color=94,129,171
+Color=96,127,166
 
 [Color4Intense]
-Color=94,129,171
+Color=96,127,166
 
 [Color5]
-Color=108,139,173
+Color=102,137,156
 
 [Color5Intense]
-Color=108,139,173
+Color=102,137,156
 
 [Color6]
-Color=124,162,194
+Color=95,129,169
 
 [Color6Intense]
-Color=124,162,194
+Color=95,129,169
 
 [Color7]
 Color=198,198,200
