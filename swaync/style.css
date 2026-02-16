@@ -1,5 +1,6 @@
 /* Import pywal colors */
 @import url('/home/xyphe/.config/hypr/colors/colors-waybar.css');
+
 /* Fallback font */
 * {
   font-family: JetBrainsMono Nerd Font, sans-serif;
@@ -13,7 +14,7 @@
   border-radius: 14px;
   border: 2px solid @color2;
   padding: 10px;
-  margin: 6px;
+  margin: 5px;
 }
 
 /* App name */
@@ -48,8 +49,8 @@
 }
 
 .notification.critical {
-  border-color: @color1;
-  background: alpha(@color1, 0.15);
+  border-color: red;
+  background: alpha(@background, 0.50);
 }
 
 /* Control center */
