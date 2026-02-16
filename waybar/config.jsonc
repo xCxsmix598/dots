@@ -32,11 +32,11 @@
   ],
   "modules-left": [
     "custom/launcher",
-    "mpris",
-    "hyprland/workspaces"
+    "hyprland/workspaces",
+    "clock"
   ],
   "modules-center": [
-    "clock"
+    "mpris"
   ],
   "backlight": {
     "device": "intel_backlight",
@@ -159,9 +159,9 @@
     "tooltip": true,
     "format-icons": {
       "default": "",
-      "performance": "",
+      "performance": "",
       "balanced": "",
-      "power-saver": ""
+      "power-saver": "󰌪"
     }
   },
   "niri/workspaces": {
