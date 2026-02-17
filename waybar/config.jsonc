@@ -186,7 +186,11 @@
     },
     "status-icons": {
       "paused": ""
-    }
+    },
+    "scrolling": true,
+    "scroll-speed": 1,
+    "scroll-delay": 0,
+    "max-length": 80
     // "ignored-players": ["firefox"]
   }
 }

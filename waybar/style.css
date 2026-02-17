@@ -5,7 +5,7 @@
 }
 
 * {
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMono Nerd Font", "Noto Sans Mono CJK", sans-serif;
   font-weight: bold;
   margin-top: 3px;
   font-size: 14px;
@@ -93,7 +93,8 @@ tooltip {
 }
 
 #network {
-  border-bottom: 3px solid @color8
+  border-bottom: 3px solid @color8;
+  min-width: 36px
 }
 
 #pulseaudio {
