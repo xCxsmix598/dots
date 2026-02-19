@@ -114,7 +114,7 @@
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
     "tooltip-format-ethernet": "{ifname} ",
     "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50,
+    "max-length": 20,
     "on-click": "kitty -e impala"
   },
   "bluetooth": {
@@ -191,6 +191,8 @@
     "scroll-speed": 1,
     "scroll-delay": 0,
     "max-length": 80
-    // "ignored-players": ["firefox"]
+    //"ignored-players": [
+    //  "chromium"
+    //]
   }
 }

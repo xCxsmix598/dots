@@ -1,18 +1,12 @@
 /* Import pywal colors */
 @import url("$HOME/.config/hypr/colors/colors-waybar.css");
 
-/* Fallback if colors-waybar.css doesn't exist */
-@define-color background @background;
-@define-color foreground @foreground;
-@define-color color1 @color1;
-@define-color color2 @color2;
-@define-color color3 @color3;
 
 /* Window */
 window {
   margin: 0px;
   border-radius: 14px;
-  background-color: alpha(@background, 0.3);
+  background-color: @background;
   border: 2px solid @color2;
   font-family: "JetBrainsMono Nerd Font", monospace;
   font-size: 14px;
@@ -28,7 +22,7 @@ window {
   padding: 12px;
   margin-bottom: 15px;
   border-radius: 10px;
-  background-color: alpha(@color1, 0.3);
+  background-color: @color1;
   color: @foreground;
   border: 2px solid transparent;
 }
