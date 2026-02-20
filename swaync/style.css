@@ -1,9 +1,9 @@
 /* Import pywal colors */
-@import url('/home/xyphe/.config/hypr/colors/colors-waybar.css');
+@import url('/home/xyphe/.cache/wal/colors-waybar.css');
 
 /* Fallback font */
 * {
-  font-family: JetBrainsMono Nerd Font, sans-serif;
+  font-family: "Noto Color Emoji", "JetBrainsMono Nerd Font", sans-serif;
   font-size: 14px;
 }
 

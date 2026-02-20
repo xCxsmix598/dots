@@ -32,7 +32,7 @@
   ],
   "modules-left": [
     "custom/launcher",
-    "hyprland/workspaces",
+    "niri/workspaces",
     "clock"
   ],
   "modules-center": [
