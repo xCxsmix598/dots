@@ -44,7 +44,7 @@ tooltip {
 }
 
 #mpris {
-  border-bottom: 3px solid @color9;
+  border-bottom: 3px solid @color14;
 }
 
 #power-profiles-daemon {
