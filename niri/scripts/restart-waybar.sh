@@ -1,3 +1,6 @@
 #/usr/bin/env sh
 
-killall -9 waybar; waybar
+killall -9 waybar
+waybar &
+disown
+

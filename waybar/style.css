@@ -5,10 +5,10 @@
 }
 
 * {
-  font-family: "JetBrainsMono Nerd Font", "Noto Sans Mono CJK", sans-serif;
+  font-family: "Noto Sans", "JetBrainsMono Nerd Font", "Noto Sans Mono CJK", sans-serif;
   font-weight: bold;
   margin-top: 3px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 tooltip {

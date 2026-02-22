@@ -39,6 +39,8 @@ fi
 
 WALLPAPER="${WALLPAPERS[$INDEX]}"
 
+cp "$WALLPAPER" "$HOME/.config/swaylock/wallpaper.png"
+
 # ---- Apply pywal ----
 /home/xyphe/.config/niri/.venv/bin/python -m pywal -i "$WALLPAPER" -n &
 
