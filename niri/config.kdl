@@ -181,7 +181,7 @@ layout {
         // You can use any CSS linear-gradient tool on the web to set these up.
         // Changing the color space is also supported, check the wiki for more info.
         //
-         active-gradient from="#80c8ff" to="#c7ff7f" angle=45
+       active-gradient from="#587593" to="#6E6C73" angle=145
 
         // You can also color the gradient relative to the entire view
         // of the workspace, rather than relative to just the window itself.
@@ -267,12 +267,12 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
-spawn-at-startup "swaync"
-spawn-at-startup "swww-daemon"
-spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
-spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
-
+spawn-sh-at-startup "waybar &"
+spawn-sh-at-startup "swaync &"
+spawn-sh-at-startup "swww-daemon &"
+spawn-sh-at-startup "wl-paste --type text --watch cliphist store &"
+spawn-sh-at-startup "wl-paste --type image --watch cliphist store &"
+spawn-sh-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &"
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 
@@ -404,7 +404,9 @@ binds {
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
     Mod+Shift+Slash { show-hotkey-overlay; }
-    
+   
+
+    Mod+E { spawn "nautilus"; }
     Mod+Slash { spawn-sh "cliphist list | wofi --dmenu --prompt Clipboard | cliphist decode | wl-copy"; }
     Mod+Period { spawn-sh "flatpak run it.mijorus.smile"; }
     // Suggested binds for running programs: terminal, app launcher, screen locker.
@@ -423,8 +425,8 @@ binds {
     // "-l 1.0" limits the volume to 100%.
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && $HOME/.config/niri/scripts/volume.sh"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && $HOME/.config/niri/scripts/volume.sh"; }
-    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";}
-    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle && $HOME/.config/niri/scripts/volume.sh";}
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && $HOME/.config/niri/scripts/volume.sh"; }
 
     // Example media keys mapping using playerctl.
     // This will work with any MPRIS-enabled media player.
@@ -444,7 +446,7 @@ binds {
     // or do a four-finger swipe up on a touchpad.
     Mod+O repeat=false { toggle-overview; }
    
-    Muhenkan { spawn-sh "$HOME/.config/niri/scripts/wallpaper.sh"; }
+    Muhenkan { spawn-sh "$HOME/.config/niri/scripts/wallpaper.sh && sleep 0.5 && $HOME/.config/niri/scripts/colors-niri.sh"; }
     Mod+Alt+R { spawn-sh "$HOME/.config/niri/scripts/restart-waybar.sh"; }
     Mod+Space { spawn "wofi"; }
 
@@ -554,8 +556,8 @@ binds {
     // These binds are also affected by touchpad's natural-scroll, so these
     // example binds are "inverted", since we have natural-scroll enabled for
     // touchpads by default.
-    // Mod+TouchpadScrollDown { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02+"; }
-    // Mod+TouchpadScrollUp   { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02-"; }
+    Mod+TouchpadScrollDown { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02+ && $HOME/.config/niri/scripts/volume.sh"; }
+    Mod+TouchpadScrollUp   { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02- && $HOME/.config/niri/scripts/volume.sh"; }
 
     // You can refer to workspaces by index. However, keep in mind that
     // niri is a dynamic workspace system, so these commands are kind of

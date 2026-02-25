@@ -178,14 +178,14 @@
     }
   },
   "mpris": {
-    "format": "{player_icon}   {title}    {artist}",
-    "format-paused": "{status_icon}   {title}    {artist}",
+    "format": "{title}  {player_icon}   {artist}",
+    "format-paused": "{title}  {status_icon}   {artist}",
     "player-icons": {
-      "default": "",
+      "default": "",
       "mpv": "🎵"
     },
     "status-icons": {
-      "paused": ""
+      "paused": ""
     },
     "scrolling": true,
     "scroll-speed": 1,
