@@ -32,19 +32,19 @@ tooltip {
 }
 
 #custom-launcher {
-  border-bottom: @color15 solid 3px;
+  border-bottom: @color6 solid 3px;
   font-size: 24;
   min-width: 36px;
   border-radius: 64px
 }
 
 #backlight {
-  border-bottom: 3px solid @color11;
+  border-bottom: 3px solid @color6;
   min-width: 50px
 }
 
 #mpris {
-  border-bottom: 3px solid @color14;
+  border-bottom: 3px solid @color6;
 }
 
 #power-profiles-daemon {
@@ -72,7 +72,7 @@ tooltip {
 
 #tray {
   opacity: 0;
-  border-bottom: 3px @color12 solid;
+  border-bottom: 3px @color6 solid;
   padding-right: 12px;
   padding-left: 12px;
   min-width: 32px;
@@ -88,22 +88,22 @@ tooltip {
 
 #custom-notification {
   padding: 0px 3px 0px 0px;
-  border-bottom: 3px @color7 solid;
+  border-bottom: 3px @color6 solid;
   min-width: 60px;
 }
 
 #network {
-  border-bottom: 3px solid @color8;
+  border-bottom: 3px solid @color6;
   min-width: 36px
 }
 
 #pulseaudio {
-  border-bottom: 3px solid @color10;
+  border-bottom: 3px solid @color6;
   min-width: 50px
 }
 
 #bluetooth {
-  border-bottom: 3px solid @color9
+  border-bottom: 3px solid @color6
 }
 
 #workspaces {
@@ -150,6 +150,6 @@ tooltip {
   border-radius: 32px;
   padding-right: 12px;
   padding-left: 12px;
-  border-bottom: 3px solid @color14;
+  border-bottom: 3px solid @color6;
   min-width: 80px
 }

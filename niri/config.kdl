@@ -181,7 +181,7 @@ layout {
         // You can use any CSS linear-gradient tool on the web to set these up.
         // Changing the color space is also supported, check the wiki for more info.
         //
-       active-gradient from="#587593" to="#6E6C73" angle=145
+       active-gradient from="#6C7A92" to="#587397" angle=145
 
         // You can also color the gradient relative to the entire view
         // of the workspace, rather than relative to just the window itself.
@@ -324,6 +324,11 @@ window-rule {
 }
 
 window-rule {
+  match app-id="com.dec05eba.gpu_screen_recorder"
+  open-floating true
+}
+
+window-rule {
   match app-id="^wofi$"
   draw-border-with-background false
 }
@@ -446,7 +451,7 @@ binds {
     // or do a four-finger swipe up on a touchpad.
     Mod+O repeat=false { toggle-overview; }
    
-    Muhenkan { spawn-sh "$HOME/.config/niri/scripts/wallpaper.sh && sleep 0.5 && $HOME/.config/niri/scripts/colors-niri.sh"; }
+    Muhenkan { spawn-sh "$HOME/.config/niri/scripts/wallpaper.sh && sleep 2 && $HOME/.config/niri/scripts/colors-niri.sh"; }
     Mod+Alt+R { spawn-sh "$HOME/.config/niri/scripts/restart-waybar.sh"; }
     Mod+Space { spawn "wofi"; }
 
